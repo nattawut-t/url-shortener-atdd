@@ -22,4 +22,7 @@ Submit Long Url
     Click Button                        copy
 
 Paste Url in New Tag
-    Press Key                           //xpath         CMD+T
+    # Press Key                           xpath=//body         ^T
+    # Execute JavaScript                  window.open($(this).data("paste", 1), '_blank')
+    # Execute JavaScript                  window.clipboardData.getData('Text')
+    Click Button                        test
